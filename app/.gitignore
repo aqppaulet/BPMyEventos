@@ -1,3 +1,4 @@
+
 /src-providedGroovy
 /h2_database
 /process_configurations
@@ -16,3 +17,12 @@
 
 #only used as user preferences
 /database_connectors_properties
+
+
+!/.settings
+/.settings/**
+!/.settings/org.bonitasoft.studio.common.repository.prefs
+!/.settings/org.bonitasoft.studio.common.repository/
+!/.settings/org.bonitasoft.studio.common.repository/uib/
+!/app/
+!/app/web_applications/

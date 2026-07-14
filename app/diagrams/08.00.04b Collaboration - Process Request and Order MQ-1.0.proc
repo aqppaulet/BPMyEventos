@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/bpm/parameter" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_YrR58C24Eeyv2p0mKkoYjg" documentation="In the intermediate message catching event, correlation and message content mapping sometimes caused problems when the business object was used. Therefore, process variables are used. The values are copied to and from the business variable." name="08.00.04b Collaboration - Process Request and Order MQ" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_YrR58C24Eeyv2p0mKkoYjg" documentation="In the intermediate message catching event, correlation and message content mapping sometimes caused problems when the business object was used. Therefore, process variables are used. The values are copied to and from the business variable." name="08.00.04b Collaboration - Process Request and Order MQ" bonitaModelVersion="9">
     <elements xmi:type="process:Pool" xmi:id="_YrR58S24Eeyv2p0mKkoYjg" name="Process Request and Order MQ">
       <elements xmi:type="process:Lane" xmi:id="_YrR58i24Eeyv2p0mKkoYjg" name="Seller" actor="_YrR6Cy24Eeyv2p0mKkoYjg">
         <elements xmi:type="process:Task" xmi:id="_YrR59y24Eeyv2p0mKkoYjg" name="Create quotation" outgoing="_HD6oYC29Eeyv2p0mKkoYjg" incoming="_YrR6CC24Eeyv2p0mKkoYjg" overrideActorsOfTheLane="false">
@@ -127,7 +127,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_CvLnUS2-Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_CvLnUy2-Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
           <connectors xmi:type="process:Connector" xmi:id="_Oi2L4C8tEeyj37tDnfSNiw" name="copyAccepted" definitionId="scripting-groovy-script" event="ON_ENTER" definitionVersion="1.0.1">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Oi2y8C8tEeyj37tDnfSNiw" definitionId="scripting-groovy-script" version="1.0.1" modelVersion="8">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Oi2y8C8tEeyj37tDnfSNiw" definitionId="scripting-groovy-script" version="1.0.1" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Oi2y8S8tEeyj37tDnfSNiw" key="script">
                 <expression xmi:type="expression:Expression" xmi:id="_Oi2y8i8tEeyj37tDnfSNiw" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
               </parameters>
@@ -252,7 +252,7 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_Ui4H4C29Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_Ui4H4i29Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <connectors xmi:type="process:Connector" xmi:id="_DqaIYC3dEeyv2p0mKkoYjg" name="Forward quotation" definitionId="connector-rabbitmq" event="ON_ENTER" definitionVersion="1.0.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DqaIYS3dEeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="8">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_DqaIYS3dEeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="9">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_DqaIYi3dEeyv2p0mKkoYjg" key="host">
               <expression xmi:type="expression:Expression" xmi:id="_DqaIYy3dEeyv2p0mKkoYjg" name="rabbitMQhost" content="rabbitMQhost" type="TYPE_PARAMETER" returnTypeFixed="true">
                 <referencedElements xmi:type="parameter:Parameter" xmi:id="_D7lfAC89EeyIV6Vt-mnXAA" name="rabbitMQhost" typeClassname="java.lang.String"/>
@@ -336,7 +336,7 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="__1X64C24Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="__1X64i24Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <connectors xmi:type="process:Connector" xmi:id="_No5fsC26Eeyv2p0mKkoYjg" name="Retrieve request" definitionId="connector-rabbitmq" event="ON_ENTER" definitionVersion="1.0.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_No5fsS26Eeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="8">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_No5fsS26Eeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="9">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_No5fsi26Eeyv2p0mKkoYjg" key="host">
               <expression xmi:type="expression:Expression" xmi:id="_No5fsy26Eeyv2p0mKkoYjg" name="rabbitMQhost" content="rabbitMQhost" type="TYPE_PARAMETER" returnTypeFixed="true">
                 <referencedElements xmi:type="parameter:Parameter" xmi:id="_FsnXwC89EeyIV6Vt-mnXAA" name="rabbitMQhost" typeClassname="java.lang.String"/>
@@ -430,7 +430,7 @@
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_KVqp0S25Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_KVqp0y25Eeyv2p0mKkoYjg" name="" content="" returnTypeFixed="true"/>
         <connectors xmi:type="process:Connector" xmi:id="_GUJqQC27Eeyv2p0mKkoYjg" name="Retrieve answer" definitionId="connector-rabbitmq" event="ON_ENTER" definitionVersion="1.0.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_GUJqQS27Eeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="8">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_GUJqQS27Eeyv2p0mKkoYjg" definitionId="connector-rabbitmq" version="1.0.0" modelVersion="9">
             <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_GUJqQi27Eeyv2p0mKkoYjg" key="host">
               <expression xmi:type="expression:Expression" xmi:id="_GUJqQy27Eeyv2p0mKkoYjg" name="rabbitMQhost" content="rabbitMQhost" type="TYPE_PARAMETER" returnTypeFixed="true">
                 <referencedElements xmi:type="parameter:Parameter" xmi:id="_H1K_sC89EeyIV6Vt-mnXAA" name="rabbitMQhost" typeClassname="java.lang.String"/>

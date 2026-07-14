@@ -1,0 +1,8 @@
+== Migration notes (14 de julio de 2026, 11:56:14 PET)
+
+=== Updates
+
+* `app\.gitignore` file has been updated.
+* Bonita project parent has been updated from `9.0.0` to `10.4.0`.
+* Required Java version updated to `17`. Make sure that your third party dependencies are compliant with Java 17.
+
